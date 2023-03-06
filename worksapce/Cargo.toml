@@ -1,0 +1,14 @@
+#1、新建文件夹 2、新建Cargo.toml 3、本目录打开vscode   4、配置Cargo.toml [workspace]
+#5、cargo new add-one --lib    adder 依赖于add-one  配置adder 的依赖项  add-one = {path="../add-one"}
+#6、cargo run -p adder 运行主程序
+#7、添加外部依赖 在对应的create （依赖）Cargo.toml 中配置 [dependencies]
+#8、测试 cargo test          cargo test -p add-two
+#9、cargo install 安装二进制crate包
+
+
+[workspace]
+members = [
+    "adder",
+    "add-one",
+    "add-two",
+]

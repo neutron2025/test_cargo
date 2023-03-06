@@ -1,0 +1,16 @@
+[package]
+name = "fabu14"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
+#opt-level 在编译代码的时候，进行何种程度的优化 0-3  开发时更注重短的编译时间
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
